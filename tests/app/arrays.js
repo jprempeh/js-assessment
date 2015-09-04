@@ -29,8 +29,11 @@ describe('arrays', function() {
 
   it('you should be able to remove all instances of a value from an array, returning the original array', function() {
     a.splice( 1, 0, 2 );
+	  console.log('a', a);
     a.push( 2 );
+	  console.log('a', a);
     a.push( 2 );
+	  console.log('a', a);
 
     var result = arraysAnswers.removeWithoutCopy(a, 2);
 
@@ -45,6 +48,7 @@ describe('arrays', function() {
     var result = arraysAnswers.append(a, 10);
 
     expect(result).to.have.length(5);
+	  console.log(result);
     expect(result[result.length - 1]).to.eql(10);
   });
 
